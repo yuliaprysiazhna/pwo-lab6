@@ -15,7 +15,7 @@ public class SeqToOutApp extends SeqToFileApp {
     }
 
     @Override
-    protected boolean writeSeqq() {
+    protected boolean writeSeq() {
         System.out.println(SequenceTools.getTermsAsColumn(
                 seqType.getGenerator(), from, to));
         return true;
@@ -30,6 +30,6 @@ public class SeqToOutApp extends SeqToFileApp {
                     + "Legal usage: seqName from to");
             return;
         }
-        writeSeqq();
+        writeSeq();
     }
 }

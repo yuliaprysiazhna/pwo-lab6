@@ -5,22 +5,30 @@
 package pwo.seq;
 
 import java.math.BigDecimal;
-
+/**
+ * Generator rzadu Fibbonaciego.
+ */
 public class FibonacciGenerator extends Generator {
-
+/**
+     * Tworzy nowa instancje.
+     */
     public FibonacciGenerator() {
         current = new BigDecimal(0);
         f_1 = new BigDecimal(1);
         f_2 = new BigDecimal(0);
     }
-
+/**
+     * Resetuje ciag do pierwszego elementu.
+     */
     @Override
     public void reset() {
         current = new BigDecimal(0);
         f_1 = new BigDecimal(1);
         f_2 = new BigDecimal(0);
     }
-
+/**
+     * @return Nastepny element rzadu Lucasa.
+     */
     @Override
     public BigDecimal nextTerm() {
 

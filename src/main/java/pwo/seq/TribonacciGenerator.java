@@ -6,20 +6,30 @@ package pwo.seq;
 
 
 import java.math.BigDecimal;
+/**
+ * Generator rzadu Tribonacciego.
+ */
 
 public class TribonacciGenerator extends
         FibonacciGenerator {
+     /**
+     * Tworzy nowa instancje.
+     */
 
     public TribonacciGenerator() {
         f_3 = new BigDecimal(0);
     }
-
+/**
+     * Resetuje ciag do pierwszego elementu.
+     */
     @Override
     public void reset() {
         super.reset();
         f_3 = new BigDecimal(0);
     }
-
+/**
+     * @return Nastepny element rzadu Tribonacciego.
+     */
     @Override
     public BigDecimal nextTerm() {
         if (lastIndex > 2) {

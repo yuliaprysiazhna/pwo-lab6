@@ -6,14 +6,21 @@ package pwo.seq;
 
 import java.math.BigDecimal;
 
+/**
+ * Generator rzadu Lucasa.
+ */
 public class LucasGenerator extends FibonacciGenerator {
-
+/**
+     * Tworzy nowa instancje.
+     */
     public LucasGenerator() {
         current = new BigDecimal(2);
         f_2 = new BigDecimal(2);
 
     }
-
+/**
+     * Resetuje ciag do pierwszego elementu.
+     */
     @Override
     public void reset() {
         super.reset();
@@ -21,7 +28,9 @@ public class LucasGenerator extends FibonacciGenerator {
         f_2 = new BigDecimal(2);
 
     }
-
+/**
+     * @return Nastepny element rzadu Lucasa.
+     */
     @Override
     public BigDecimal nextTerm() {
         if (lastIndex == 0) {
