@@ -36,7 +36,7 @@ class SeqToFileApp {
         return seqType != null && from >= 0 && to >= 0;
     }
 
-    protected boolean writeSeqq() {
+    protected boolean writeSeq() {
         return SequenceTools.writeToFile(seqType.getGenerator(),
                 from, to, fileName);
     }
@@ -50,7 +50,7 @@ class SeqToFileApp {
             return;
         }
 
-        if (!writeSeqq()) {
+        if (!writeSeq()) {
             System.out.println("!Write to the file: "
                     + fileName + " FAILED");
             return;
